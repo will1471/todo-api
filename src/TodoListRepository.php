@@ -8,7 +8,7 @@ class TodoListRepository
     /**
      * @return TodoList[]
      */
-    public function fetchAll()
+    public function fetchAll() : array
     {
         return [
             new TodoList(1, 'Some List')

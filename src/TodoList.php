@@ -5,38 +5,22 @@ namespace TodoApi;
 class TodoList
 {
 
-    /**
-     * @var int
-     */
     private $id;
 
-    /**
-     * @var string
-     */
     private $name;
 
-    /**
-     * @param int $id
-     * @param string $name
-     */
-    public function __construct($id, $name)
+    public function __construct(int $id, string $name)
     {
         $this->id = $id;
         $this->name = $name;
     }
 
-    /**
-     * @return int
-     */
-    public function id()
+    public function id(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
-    public function name()
+    public function name(): string
     {
         return $this->name;
     }
